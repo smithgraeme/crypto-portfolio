@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import $ from "jquery";
 import Highcharts from "highcharts/highstock";
 
+//generic reuseable UI element that just displays a chart of data
 class CryptoChart extends React.Component {
   constructor(props){
     super(props)
