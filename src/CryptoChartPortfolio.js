@@ -3,6 +3,8 @@ import $ from "jquery";
 
 import CryptoChart from './CryptoChart';
 
+import CryptoChartSpecificCoin from './CryptoChartSpecificCoin';
+
 class CryptoChartPortfolio extends React.Component {
   constructor(props){
     super(props)
@@ -11,7 +13,7 @@ class CryptoChartPortfolio extends React.Component {
 
   render(){
     return (
-      <CryptoChart {...this.props} data={this.state.data}/>
+      <CryptoChartSpecificCoin title="Crypto Portfolio" coin="ripple" days="2"/>
     )
   }
 

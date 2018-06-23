@@ -1,4 +1,82 @@
 .mainPortfolioChart {
-  max-width: 900px;
+  max-width: 90%;
   margin:0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.coinListTable{
+  max-width: 85%;
+  margin:0 auto;
+}
+
+:root {
+  --coinRowHeigh: 80px;
+  --borderWidth: 1px;
+}
+
+.coinListEntry {
+  max-width: 100%;
+  height: var(--coinRowHeigh);
+
+  display: flex;
+
+  border-style: solid;
+  border-width: var(--borderWidth);
+  border-color: silver;
+}
+
+.addToPortfolioButton {
+  height: var(--coinRowHeigh);
+
+  display:flex;
+  align-items: center;
+
+  border-style: solid;
+  border-width: var(--borderWidth);
+  border-color: red;
+}
+
+.coinListEntryIconDiv {
+  width: 200px;
+  height: var(--coinRowHeigh);
+
+  display:flex;
+  align-items: center;
+
+  border-style: solid;
+  border-width: var(--borderWidth);
+  border-color: blue;
+}
+
+.coinListEntryIcon {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.coinListEntryNameContainer{
+  width: 100%;
+  height: var(--coinRowHeigh);
+
+  border-style: solid;
+  border-width: var(--borderWidth);
+  border-color: green;
+}
+
+.coinListEntryNameText {
+  font-weight: bold;
+  font-size: 20px;
+
+  text-align: center;
+  vertical-align: middle;
+  line-height: var(--coinRowHeigh);
+}
+
+.coinListEntryChart{
+  width: 400px;
+  height: var(--coinRowHeigh);
+
+  border-style: solid;
+  border-width: var(--borderWidth);
+  border-color: orange;
 }
