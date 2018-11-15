@@ -38,7 +38,7 @@ class CryptoChart extends React.Component {
 
     const chart = Highcharts.stockChart(this.state.uuid, highchartOptions)
 
-    this.setState({...this.state, chart: chart});
+    this.setState({chart: chart});
   }
 
   componentDidUpdate(){

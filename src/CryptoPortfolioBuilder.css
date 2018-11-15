@@ -11,8 +11,8 @@
 }
 
 :root {
-  --coinRowHeigh: 80px;
-  --borderWidth: 1px;
+  --coinRowHeigh: 70px;
+  --borderWidth: 0px;
 }
 
 .coinListEntry {
@@ -38,7 +38,7 @@
 }
 
 .coinListEntryIconDiv {
-  width: 200px;
+  width: 300px;
   height: var(--coinRowHeigh);
 
   display:flex;
@@ -73,10 +73,16 @@
 }
 
 .coinListEntryChart{
-  width: 400px;
+  width: 600px;
   height: var(--coinRowHeigh);
 
   border-style: solid;
   border-width: var(--borderWidth);
   border-color: orange;
+  /* border-width: 1px; */
+
+}
+/* Remove the blue highlight on buttons when clicking them */
+:focus {
+    outline: none !important;
 }
