@@ -10,8 +10,6 @@ class CryptoChartSparkline extends React.PureComponent {
       data: [],
       loaded: false
     }
-
-    //console.log("Constructor CryptoChartSparkline "+ this.props.identifier)
   }
 
   render() {
