@@ -26,7 +26,7 @@ class MainPage extends React.Component {
                 <MenuIcon />
               </IconButton> */}
               <Typography variant="h4" color="inherit">
-                Cryptocurrency Portfolio Tracker
+                Simple Cryptocurrency Portfolio Tracker
               </Typography>
 
             </Toolbar>
