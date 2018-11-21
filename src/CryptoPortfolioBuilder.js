@@ -26,7 +26,7 @@ class CryptoPortfolioBuilder extends Component {
       coinList: [],
       displayCount: 50,
       inPortfolio: [],
-      portfolioOverviewDataEachCoin: {}
+      portfolioOverviewDataEachCoin: {},
     }
 
     this.handleClickAddPortfolioButton = this.handleClickAddPortfolioButton.bind(this);
@@ -38,11 +38,12 @@ class CryptoPortfolioBuilder extends Component {
     const data = this.getPortfolioOverviewData();
     console.log(data)
 
-    const shouldRenderChart = this.state.inPortfolio.length > 0;
+    var shouldRenderChart = (this.state.inPortfolio.length > 0) && (data !== null);
 
     var chart = null;
-    if (shouldRenderChart)
+    if (shouldRenderChart) {
       chart = <CryptoChartPortfolio data={data}/>
+    }
 
     return (
       <Provider store={store}>
