@@ -38,11 +38,17 @@ class CryptoPortfolioBuilder extends Component {
     const data = this.getPortfolioOverviewData();
     console.log(data)
 
+    const shouldRenderChart = this.state.inPortfolio.length > 0;
+
+    var chart = null;
+    if (shouldRenderChart)
+      chart = <CryptoChartPortfolio data={data}/>
+
     return (
       <Provider store={store}>
         <React.Fragment>
           <div className="mainPortfolioChart">
-            <CryptoChartPortfolio data={data}/>
+            {chart}
           </div>
           <PortfolioCoinList {...this.state} onClickAddToPortfolio={this.handleClickAddPortfolioButton}/>
         </React.Fragment>
